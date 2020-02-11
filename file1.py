@@ -1,9 +1,7 @@
 import os
+import sys
 
-name=raw_input('enter your name ')
-filename=raw_input('enter your new file name')
-
-os.system('touch {}'.format(filename))
-print('hello {} good eveng how r u your file {} was created successfully '.format(name,filename))
+os.system('touch {}'.format(sys.args[1]))
+print('hello {} good eveng how r u your file {} was created successfully '.format(sys.args[1],sys.args[2]))
 
 
